@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  @apply bg-gray-900 text-white;
+}
+
+.dark input,
+.dark textarea {
+  @apply bg-gray-800 border-gray-700 text-white;
+}
+
+.dark button {
+  @apply text-gray-300;
+}
+
+/* Smooth transitions for dark mode */
+* {
+  @apply transition-colors duration-200;
+}
